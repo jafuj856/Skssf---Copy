@@ -1,0 +1,54 @@
+<style>
+    body{
+        
+    }
+</style>
+
+<section>
+   
+              {{#if add}}
+                <script type="text/javascript">alert('Data saved successfully')</script>
+               {{/if}}
+
+    <div class="container mt-3" style="display: flex; justify-content: center; padding-top: 10;">
+
+         
+    
+            <div class="col-md-6">
+                <h2 class="text-center" style="font-size: x-large;">Add Events</h2>
+                
+               
+               
+               
+  <form action="/admin/add-events" method="post" enctype="multipart/form-data" class="bg-warning p-5" style="border-radius: 10px;">          
+ 
+  <div class="form-row text-center">
+     <div class="form-group col-md-12">
+      <label for="Name text-center" style="color: black;font-size: larger;">Events Name</label>
+      <input type="text" class="form-control" name="name" required="true">
+    </div>
+
+    <div class="form-group col-md-12">
+      <label for="image text-center" style="color: black;font-size: larger;">Date</label>
+      
+      <input type="date" class="form-control" name="date"  required="true">
+    </div>
+ 
+    <div class="form-group col-md-12">
+      <label for="image text-center" style="color: black;font-size: larger;">Images</label>
+      
+      <input type="file" class="form-control" name="image"  required="true">
+    </div>
+  </div>
+    <a href="/admin"  style="margin-right: 55%; font-size: large;">Back to Home</a>
+  <button type="submit" class="btn btn-success" id="submit">submit</button>
+</form>
+            </div>
+       
+    </div>
+
+     <div class="row mt-5" style="margin-bottom: 15%;margin-top: ;">
+          
+           
+        </div>
+</section>

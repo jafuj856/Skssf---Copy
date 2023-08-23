@@ -1,0 +1,73 @@
+    <style>
+.column:last-child {
+	padding-bottom: 60px;
+}
+.column::after {
+	content: '';
+	clear: both;
+	display: block;
+}
+.column div {
+	position: relative;
+	float: left;
+
+	margin: 0 0 0 25px;
+	padding: 0;
+}
+.column div:first-child {
+	margin-left: 0;
+}
+
+.hover01 figure img {
+	-webkit-transform: scale(1);
+	transform: scale(1);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+.hover01 figure:hover img {
+	-webkit-transform: scale(1.3);
+	transform: scale(1.3);
+}
+
+figure {
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: hidden;
+}
+figure:hover+span {
+	bottom: -36px;
+	opacity: 1;
+}
+
+    </style>
+    <section>
+     <link rel="stylesheet" href="/public/stylesheet/photo.css">
+       
+            <h1 class="text-center" style="font-size: xx-large; color: burlywood;"> Photo Gallery</h1>
+            {{#if allmembers}}
+            <div class="container mt-2" style="background-image: linear-gradient(
+        to top left, #5d5d5f, #f5c0da);">
+                <div class="row"  style="border-radius: 10px;">
+                    {{#each allmembers}}
+                    <div class="col-md-3 p-2 pl-4" style="border-radius: 20px;">
+                        <div class="hover01 column" style="width: 15rem;height: 20rem;">
+                            <a href="/images/meberse-images/{{this._id}}.jpg" style="outline: none;border: none; " target="_blank">
+                            <figure>
+                           <img class="photo"
+                                src="/images/meberse-images/{{this._id}}.jpg"
+                                alt="Card image cap"
+                                style="width: 15rem;height: 20em; border-radius: 10px;">
+                                 </figure>
+                                 </a>
+                        </div>
+                    </div>
+                    {{/each}}
+                    {{else}} <h1 class="text-warning text-center" style="margin-top: 13%;">There Have No Imagese 
+                        <p style="font-size: x-large;">&#128553; &#128553; &#128553;</p></h1>
+                    {{/if}}
+                </div>
+            </div>       
+                   
+        </section>
+

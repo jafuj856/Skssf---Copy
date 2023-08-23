@@ -1,0 +1,206 @@
+<section>
+    <div class="text-center shadow-5 p-1 mb-0"><h2 class="fw-bold"
+    style="font-size: x-large;">Welcom to </h2>
+    <p style="color: red; margin-top: -1%;">Skssf Edakadappuram Committee</p>
+    </div>
+    <div class="text-center shadow-5 p-2 mb-0 bg-dark" style="margin-top: -1%;"></div>
+    <div class="container">
+        <div class="row">
+        <div class="col-md-12">
+            <div class="card-group p-4" style="background-color: black; border-radius: 10px;">
+  <div class="card mr-5" style="border-radius: 10px;background-color: rgb(54, 41, 3); width: 120px;">
+     {{#if members.president}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.president._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Precident</h5>
+     <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.president.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.president.mobaile}} </span></p>
+      
+    </div>
+  </div>
+  <div class="card mr-5" style="border-radius: 10px;background-color: rgb(54, 41, 3); width: 120px;">
+      {{#if members.G_secretary}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.G_secretary._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Genaral Secretary</h5>
+     <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.G_secretary.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.G_secretary.mobaile}} </span></p>
+      
+    </div>
+  </div>
+  <div class="card mr-5" style="border-radius: 10px;background-color: rgb(54, 41, 3); width: 120px;">
+      {{#if members.treasurer}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.treasurer._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Treasurer</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.treasurer.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.treasurer.mobaile}} </span></p>
+      
+    </div>
+  </div>
+
+    <div class="card " style="border-radius: 10px;background-color: rgb(54, 41, 3); width: 120px;">
+      {{#if members.allMembers.vic_president}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.allMembers.vic_president._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Vice-president</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.vic_president.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.vic_president.mobaile}} </span></p>
+      
+    </div>
+  </div>
+</div>
+        </div>
+        </div>
+
+
+         <div style="display: flex; justify-content: space-between;background-color: black; border-radius: 10px;
+         padding: 2%;margin-top: 2%;">
+          
+
+  <div class="card mr-4" style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.wr_secretary}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.wr_secretary._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Working Secretary</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.wr_secretary.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.wr_secretary.mobaile}} </span></p>
+      
+    </div>
+  </div>
+  <div class="card " style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.trend}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.treasurer._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Trend</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.trend.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.trend.mobaile}} </span></p>
+      
+    </div>
+  </div>
+
+   
+</div>
+<div style="display: flex; justify-content: space-between;background-color: black; border-radius: 10px;
+         padding: 2%;">
+
+<div class="card mr-4" style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.thwalaba}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.allMembers.thwalaba._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Thwalaba</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.thwalaba.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.thwalaba.mobaile}} </span></p>
+      
+    </div>
+  </div>
+  <div class="card " style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.viqaya}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.viqaya._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Viquaya</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.viqaya.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.viqaya.mobaile}} </span></p>
+      
+    </div>
+  </div>
+
+   
+</div>
+
+<div style="display: flex; justify-content: space-between;background-color: black; border-radius: 10px;
+         padding: 2%;">
+
+<div class="card mr-4" style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.ibadh}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.allMembers.ibadh._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Ibad</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.ibadh.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.ibadh.mobaile}} </span></p>
+      
+    </div>
+  </div>
+  <div class="card " style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.sargalaya}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.allMembers.sargalaya._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Trend</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.sargalaya.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.sargalaya.mobaile}} </span></p>
+      
+    </div>
+  </div>
+
+   
+</div>
+
+
+<div style="display: flex;align-items: center;justify-content: center; background-color: black; border-radius: 10px;
+         padding: 2%;">
+
+<div class="card mr-4" style=" background-color: rgb(54, 41, 3); width: 120px;
+  width: 18em;border-radius: 10px;
+  ">
+     {{#if members.allMembers.sahajari}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/meberse-images/{{members.allMembers.sahajari._id}}.jpg" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{else}}
+     <div style="display: flex;align-items: center;justify-content: center;"><img class="card-img-top circular" src="/images/user_318-159711.avif" alt="Card image cap" style="border-radius: 50%; width: 200px;height: 200px; align-items: center;"></div>
+        {{/if}}
+    <div class="card-body">
+      <h5 class="card-title text-center">Ibad</h5>
+       <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.sahajari.name}} </span></p>
+      <p class="card-text">Name : <span style="color: crimson; font-size: larger;margin-left: 5%;" > {{members.allMembers.sahajari.mobaile}} </span></p>
+      
+    </div>
+  </div>
+
+
+   
+</div>
+        </div>
+       
+   </div>   
+</section>

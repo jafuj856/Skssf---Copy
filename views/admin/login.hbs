@@ -1,0 +1,56 @@
+<!-- Section: Design Block -->
+<link rel="stylesheet" href="/stylesheet/glowingborder.css">
+<link rel="stylesheet" href="/stylesheet/textglowing.css">
+
+<section class="text-center text-lg-start">
+ <h1 class="glowtext" style="margin-bottom: -3%; margin-top: -3%; font-size: x-large;">Skssf Edakadappuram</h1>
+
+  <!-- Jumbotron -->
+  <div class="container " style="display: flex; justify-content: center; padding-top: 10;">
+   
+        <div class="" style="
+          
+           
+            backdrop-filter: blur(30px);
+            width: auto;
+            ">
+          <div class="card-body shadow-5 text-center box glowing" style=" border-radius: 5%;">
+            <h2 class="fw-bold mb-5">Welcom to Adminpanal</h2>
+            {{#if logerror}}
+            <h1 style="color: red;">{{logerror}}</h1>
+            {{/if}}
+            <form action="admin/login" method="post">
+              <!-- 2 column grid layout with text inputs for the first and last names -->
+             
+
+              <!--   Email input   -->
+              <div class="form-outline mb-4">
+                <input type="email" id="form3Example3" class="form-control" name="email" style=" margin-bottom: 10%;" placeholder="Enter Email"/>
+                
+              </div>
+
+              <!-- Password input -->
+              <div class="form-outline mb-4">
+                <input type="password" id="form3Example4" class="form-control" name="pwd" style="margin-bottom: 10%;" placeholder="Enter Password"/>
+               
+              </div>
+
+             
+            
+
+              <!-- Submit button -->
+              <button type="submit" class="btn btn-primary btn-block mb-0">
+                Sign in
+              </button>
+
+           
+            </form>
+      
+      </div>
+
+      
+    </div>
+  </div>
+  <!-- Jumbotron -->
+</section>
+<!-- Section: Design Block -->

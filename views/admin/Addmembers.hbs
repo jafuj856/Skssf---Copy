@@ -1,0 +1,82 @@
+
+<section>
+              {{#if add}}
+                <script type="text/javascript">alert('Data saved successfully')</script>
+               {{/if}}
+
+    <div class="container mt-4" style="display: flex; justify-content: center;">
+       
+            <div class="col-md-6">
+                <h2 class="text-center" style="font-size: xx-large;">Add Members</h2>
+                
+               
+               
+               
+  <form action="/admin/add-memberse" method="post" enctype="multipart/form-data"  class="bg-warning p-5" style="border-radius: 10px; background: rgb(131,58,180);
+background: linear-gradient(90deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);">          
+  <div class="form-row text-center">
+    <div class="form-group col-md-12">
+      <label for="Name">Name</label>
+      <input type="text" class="form-control" name="name" required="true">
+    </div>
+    
+  <div class="form-group col-md-12">
+    <label for="designation">Designation</label>
+ <select class="form-control"  name="designation" required="true" id="designation">
+        <option value="" selected="selected" hidden>Select Designation</option>
+        <option value="president">President</option>
+        <option value="secretary">Secretary</option>
+        <option value="treasurer">Treasurer</option>
+        <option value="vice-president">Vice-president</option>
+        <option value=" working secretary">Working secretary</option>
+        <option value="trend">Trend</option>
+        <option value="thwalaba">Thwalaba</option>
+        <option value="viqaya">Viqaya</option>
+        <option value="ibadh">Ibadh</option>
+        <option value="sargalaya">Sargalaya</option>
+        <option value="sahajari">Sahajari</option>
+
+    </select>
+
+  </div>
+  <div class="form-group col-md-12">
+    <label for="price">Year</label>
+
+    <input type="text" class="form-control" name="date" required="true" id="year" onfocus="this.blur()">
+     <script type="text/javascript">
+    let year=new Date().getFullYear()
+    let year2=new Date().getFullYear()+1
+      document.getElementById('year').value=year+'-'+year2
+    </script>
+  </div>
+  <div class="form-row">
+    <div class="form-group col-md-12">
+      <label for="description">Mobail Number</label>
+      <input type="number" class="form-control" name="mobaile"  required="true" minlength="10" maxlength="10">
+    </div>
+    <div class="form-group col-md-12">
+      <label for="image">Image</label>
+      
+      <input type="file" class="form-control" name="image"  required="true">
+    </div>
+ </div>
+ <a href="/admin"  style="margin-right: 55%; font-size: large;">Back to Home</a>
+  <button type="submit" class="btn btn-success" id="submit" onclick="disabld()">submit</button>
+</form>
+           
+        </div>
+    </div>
+</section>
+
+<!--<script>
+  function disabld(){
+var select =document.getElementById('designation').value
+if(select===""){
+  alert('Select Designation')
+  document.getElementById('submit').addEventListener('click',function(event)=>{
+    event.preventDefault();
+  })
+}
+  alert(select)
+  }
+</script>-->

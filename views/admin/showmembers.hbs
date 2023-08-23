@@ -1,0 +1,76 @@
+
+<section>
+
+
+
+
+    <div class="container">
+        <div class="row mt- mb-3">
+            <a href="/admin/add-members" class="btn btn-success ml-auto mr-1">Add Members</a>
+            <a href="/admin/add-events" class="btn btn-warning mr-1">Add Events</a>
+        </div>
+      
+        
+        <table class="table mt-5" id="members" style="border-bottom: solid 1px white;">
+            <thead>
+                <tr>
+                     <th scope="col">No</th>
+                    <th scope="col">Name</th>
+                    <th scope="col">Dsignation</th>
+                    <th scope="col">Mobail Number</th>
+                    <th scope="col">Date</th>
+                    <th scope="col">Photos</th>
+                    <th scope="col">Option</th>
+                    
+                </tr>
+            </thead>
+           
+            <tbody>  
+                {{#each members}}
+               
+                <tr>
+                    {{#time @index}}
+                    <td scope="row" style="background-color:black;">
+                      {{this}}
+                       
+                    </td>
+                   {{/time}}
+
+                    <td style="background-color:black;">{{this.name}}</td>
+                    <td style="background-color:black;">{{this.designation}}</td>
+                    <td style="background-color:black;">{{this.mobaile}}</td>
+                    <td style="background-color:black;">{{this.date}}</td>
+                    <td style="background-color:black; justify-content: center; display: flex;">
+                    <img  style="width: 50px;height: 50px;background-color:black;" src="/images/meberse-images/{{this._id}}.jpg" alt=""></td>
+                     <td style="background-color:black;"><a href="/admin/edit-product/{{this._id}}" class="btn btn-primary">Edit</a>
+                     <a href="/admin/delete-product/{{this._id}}" class="btn btn-danger">Remove</a></td>
+
+                </tr>
+            
+             {{/each}}
+         
+
+
+                </tbody>
+            </table>
+            
+        </div>
+    </section>
+
+
+<script>
+  $(function(){
+      $('#members').DataTable();
+  })
+</script>
+
+
+
+
+
+   
+      
+       
+           
+           
+
